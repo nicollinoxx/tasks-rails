@@ -12,10 +12,15 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
 
   test "should create task" do
     assert_difference("Task.count") do
-      post tasks_url, params: { task: { description: @task.description, title: @task.title } }, as: :json
+      post tasks_url, params: { task: { description: @task.description, title: 'unique_title' } }, as: :json
     end
 
     assert_response :created
+  end
+
+  test "shouldn't create task if title already exists" do
+    post tasks_url, params: { task: { description: @task.description, title: @task.title } }, as: :json
+    assert_response :unprocessable_entity
   end
 
   test "should show task" do
