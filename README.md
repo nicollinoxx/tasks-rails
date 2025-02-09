@@ -1,24 +1,8 @@
-# README
+# tasks-rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a task manager developed with **Rails** (backend) and **React** (Frontend).
 
-Things you may want to cover:
+## 📂 Repositories
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+🔹 **Backend (Rails):** [tasks-rails](https://github.com/nicollinoxx/tasks-rails) \
+🔹 **Frontend (React):** [tasks-react](https://github.com/nicollinoxx/tasks-react)
